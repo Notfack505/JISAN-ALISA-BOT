@@ -6,7 +6,7 @@ module.exports.config = {
     name: 'autosent',
     version: '10.0.0',
     hasPermssion: 0,
-    credits: '𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭',
+    credits: 'ROBIN',
     description: 'Set Karne Ke Bad Automatically Msg Send Karega',
     commandCategory: 'group messenger',
     usages: '[]',
@@ -52,7 +52,7 @@ module.exports.onLoad = ({ api }) => {
             hour24 = 0;
         }
 
-        const scheduledTime = moment.tz({ hour: hour24, minute: parseInt(minute, 10) }, 'Asia/Kolkata').toDate();
+        const scheduledTime = moment.tz({ hour: hour24, minute: parseInt(minute, 10) }, 'Asia/Karachi').toDate();
 
         schedule.scheduleJob(scheduledTime, () => {
             global.data.allThreadID.forEach(threadID => {
