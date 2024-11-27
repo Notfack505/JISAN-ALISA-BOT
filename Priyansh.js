@@ -355,7 +355,7 @@ cron.schedule('0 1 6 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
 cron.schedule('0 1 8 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -364,7 +364,7 @@ cron.schedule('0 1 8 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
 cron.schedule('0 0 9 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -373,7 +373,7 @@ cron.schedule('0 0 9 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
 cron.schedule('0 1 12 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -382,7 +382,7 @@ cron.schedule('0 1 12 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
 cron.schedule('0 1 13 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -391,7 +391,7 @@ cron.schedule('0 1 13 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
 cron.schedule('0 1 16 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -400,7 +400,7 @@ cron.schedule('0 1 16 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
 cron.schedule('0 1 18 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -409,7 +409,7 @@ cron.schedule('0 1 18 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
 cron.schedule('0 1 20 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -418,7 +418,7 @@ cron.schedule('0 1 20 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
 cron.schedule('0 1 21 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -427,7 +427,7 @@ cron.schedule('0 1 21 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
 cron.schedule('0 1 22 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -436,7 +436,7 @@ cron.schedule('0 1 22 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
 cron.schedule('0 59 23 * * *', () => {
   loginApiData.getThreadList(30, null, ["INBOX"], (err, list) => {
@@ -445,7 +445,7 @@ cron.schedule('0 59 23 * * *', () => {
   });
 }, {
   scheduled: true,
-  timezone: "Asia/Kolkata"
+  timezone: "Asia/Karachi"
 });
     });
 }
