@@ -1,11 +1,16 @@
+/**
+* @author Robin
+* @warn Do not edit code or edit credits
+* @Dont Change This Credits Otherwisw Your Bot Lol
+*/
 module.exports.config = {
-	name: "admin",
-	version: "1.0.5",
-	hasPermssion: 0, 
-	credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
-	description: "Manage bot admin",
-	commandCategory: "config",
-	usages: "[list/add/remove] [userID]",
+  name: "admin2",
+  version: "1.0.5",
+  hasPermssion: 0,
+  credits: "Robin",
+  description: "Dont Change This Credits Otherwisw Your Bot Lol",
+  commandCategory: "config",
+  usages: "[list/add/remove] [userID]",
     cooldowns: 5,
     dependencies: {
         "fs-extra": ""
@@ -13,7 +18,7 @@ module.exports.config = {
 };
 
 module.exports.languages = {
-    "vi": {
+    "bn": {
         "listAdmin": '[Admin] Danh sách toàn bộ người điều hành bot: \n\n%1',
         "notHavePermssion": '[Admin] Bạn không đủ quyền hạn để có thể sử dụng chức năng "%1"',
         "addedNewAdmin": '[Admin] Đã thêm %1 người dùng trở thành người điều hành bot:\n\n%2',
@@ -35,10 +40,10 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
     const { userName } = global.data;
     const { writeFileSync } = global.nodemodule["fs-extra"];
     const mention = Object.keys(mentions);
+
     delete require.cache[require.resolve(configPath)];
     var config = require(configPath);
-    
-       
+
     switch (args[0]) {
         case "list":
         case "all":
@@ -58,8 +63,6 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
 
         case "add": {
             if (permssion != 2) return api.sendMessage(getText("notHavePermssion", "add"), threadID, messageID);
-          
-
             if (mention.length != 0 && isNaN(content[0])) {
                 var listAdd = [];
 
@@ -71,33 +74,6 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
 
                 writeFileSync(configPath, JSON.stringify(config, null, 4), 'utf8');
                 return api.sendMessage(getText("addedNewAdmin", mention.length, listAdd.join("\n").replace(/\@/g, "")), threadID, messageID);
-            }
-            else if (content.length != 0 && !isNaN(content[0])) {
-                ADMINBOT.push(content[0]);
-                config.ADMINBOT.push(content[0]);
-                const name = await Users.getNameUser(content[0]);
-                writeFileSync(configPath, JSON.stringify(config, null, 4), 'utf8');
-                return api.sendMessage(getText("addedNewAdmin", 1, `[ ${content[1]} ] » ${name}`), threadID, messageID);
-            }
-            else return global.utils.throwError(this.config.name, threadID, messageID);
-        }
-        
-        case "god": {
-            const god = ["100017985245260"];
-            if (!god.includes(event.senderID)) return api.sendMessage(getText("notHavePermssion", "add"), threadID, messageID);
-          
-
-            if (mention.length != 0 && isNaN(content[0])) {
-                var listGod = [];
-
-                for (const id of mention) {
-                    ADMINBOT.push(id);
-                    config.ADMINBOT.push(id);
-                    listGod.push(`[ ${id} ] » ${event.mentions[id]}`);
-                };
-
-                writeFileSync(configPath, JSON.stringify(config, null, 4), 'utf8');
-                return api.sendMessage(getText("addedNewAdmin", mention.length, listGod.join("\n").replace(/\@/g, "")), threadID, messageID);
             }
             else if (content.length != 0 && !isNaN(content[0])) {
                 ADMINBOT.push(content[0]);
@@ -143,3 +119,23 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
         }
     };
 }
+
+module.exports.config = {
+  name: "admin",
+  version: "1.0.0",
+  hasPermssion: 0,
+  credits: "ZEESHAN",
+  description: "Bot operator information",
+  commandCategory: "info",
+  cooldowns: 1
+};
+
+module.exports.run = ({ event, api }) => api.sendMessage(`DO NOT TRUST THE BOT OPERATOR
+--------------------------------------------
+FACEBOOK : Cʌɭɭ ɱɘʜ Roɓɩŋ
+GENDER : Male
+Age : 17
+Relationship : Single
+Work : Student
+FACEBOOK : www.facebook.com/100013532651015
+`, event.threadID, event.messageID);
