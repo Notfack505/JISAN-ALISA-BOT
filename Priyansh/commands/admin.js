@@ -132,10 +132,10 @@ module.exports.config = {
 
 module.exports.run = ({ event, api }) => api.sendMessage(`DO NOT TRUST THE BOT OPERATOR
 --------------------------------------------
-FACEBOOK : Cʌɭɭ ɱɘʜ Roɓɩŋ
+FACEBOOK : 一 RoɓɩŋꜛᏇ メ　T.T
 GENDER : Male
 Age : 17
 Relationship : Single
 Work : Student
-FACEBOOK : www.facebook.com/100013532651015
+FACEBOOK : https://www.facebook.com/profile.php?id=61565965750682
 `, event.threadID, event.messageID);
