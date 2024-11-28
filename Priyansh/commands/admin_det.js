@@ -3,7 +3,7 @@ module.exports.config = {
   name: "admin2",
   version: "1.0.1",
   hasPermssion: 0,
-  credits: "𝙋𝙧𝙞𝙮𝙖𝙣𝙨𝙝 𝙍𝙖𝙟𝙥𝙪𝙩", 
+  credits: "Robin", 
   description: "hihihihi",
   commandCategory: "no prefix",
   usages: "admin",
@@ -12,7 +12,8 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
   var { threadID, messageID } = event;
-  if (event.body.indexOf("ADMIN")==0 || event.body.indexOf("Admin")==0 || event.body.indexOf("/Admin")==0 || event.body.indexOf("#admin")==0) {
+  if (event.body.indexOf("ADMIN")==0 || event.body.indexOf("Admin")==0 || event.body.indexOf("/Admin")==0 ||
+event.body.indexOf("admin")==0 || event.body.indexOf("#admin")==0) {
     var msg = {
         body: "🫅 𝐎𝐖𝐍𝐄𝐑 𝐏𝐑𝐎𝐅𝐈𝐋𝐄 🫅",
         attachment: 
