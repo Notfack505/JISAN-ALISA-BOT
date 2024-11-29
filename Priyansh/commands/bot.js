@@ -236,7 +236,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
     var msg = {
       body: `${name}, ${rand}`
     }
-    return api.sendMessage(🤣msg🤣, threadID, messageID);
+    return api.sendMessage(msg, threadID, messageID);
   };
 
 }
