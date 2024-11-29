@@ -230,7 +230,7 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
   if ((event.body.toLowerCase() == "Assalam") || (event.body.toLowerCase() == "Assalamualikom") || (event.body.toLowerCase() == "Assalm u alikom") || (event.body.toLowerCase() == "Assalmoalikom") || (event.body.toLowerCase() == "As")) {
      return api.sendMessage("🕊️🍎...Walikom assalam😚🍒", threadID);
    };
-   mess = "{name 🤣}"
+   mess = "{name}"
 
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
     var msg = {
