@@ -1,8 +1,3 @@
-/**
-* @author Robin
-* @warn Do not edit code or edit credits
-* @Dont Change This Credits Otherwisw Your Bot Lol
-*/
 module.exports.config = {
   name: "autoreact",
   version: "1.1.1",
